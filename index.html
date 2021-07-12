@@ -28,9 +28,96 @@
           </div>
           <form class="form-content" action="#" method="POST">
             <!--
-              ここに続きのHTMLを書いていきましょう
+              ここに続きのHTMLを書いていきましょう  
             -->
-            <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
+            <div class="name_wrap">
+              <div class="name_box">
+                <p class="label name_label">
+                  名字
+                  <span class="alert">※</span>
+                </p>  
+                <input type="text" name="last_name" class="zone input_zone name_zone" required>
+              </div>
+              <div class="name_box">
+                <p class="label name_label">
+                  名前
+                  <span class="alert">※</span>
+                </p>
+                <input type="text" name="first_name" class="zone input_zone name_zone" required>
+              </div>
+            </div>
+            <div class="gender_wrap">
+              <p class="label">性別</p>
+              <div class="gender_box">
+                <label class="gender_contents">
+                  <input type="radio" name="gender" class="gender_zone" value="male">
+                  <span>男性</span>
+                </label>
+                <label class="gender_contents">
+                  <input type="radio" name="gender" class="gender_zone" value="female">
+                  <span>女性</span>
+                </label>
+                <label class="gender_contents">  
+                  <input type="radio" name="gender" class="gender_zone" value="other">
+                  <span>その他</span>
+                </label>  
+              </div>  
+            </div>
+            <div class="area_wrap">
+              <p class="label">出身</p>
+              <div class="area_box">
+                <select name="area" class="zone area_zone">
+                  <option value="東京">東京</option>
+                  <option value="千葉">千葉</option>
+                  <option value="埼玉">埼玉</option>
+                  <option value="神奈川">神奈川</option>
+                </select>
+              </div>  
+            </div>
+            <div class="email_wrap">
+              <p class="label">
+                Eメール
+                <span class="alert">※</span>
+              </p>
+              <input type="email" placeholder="ex) hoge@example.com" class="zone input_zone" required>
+            </div>
+            <div class="tel_wrap"> 
+              <p class="label">電話番号</p>
+              <input type="tel" placeholder="ex) 09012345678" class="zone input_zone">
+            </div>
+            <div class="password_wrap">
+              <p class="label">
+                パスワード
+                <span class="alert">※</span>
+              </p>
+              <input type="password" class="zone input_zone" required>
+              <p class="label">
+                パスワード(確認用)
+                <span class="alert">※</span>
+              </p>
+              <input type="password" class="zone input_zone" required>
+            </div>
+            <div class="course_wrap">
+              <p class="label">希望コース</p>
+              <div class="course_contents">
+                <input type="checkbox" name="course" id="front-end" value="front-end">
+                <label for="front-end" class="course_label">フロントエンド</label>
+              </div>
+              <div class="course_contents">  
+                <input type="checkbox" name="course" id="back-end" value="back-end">
+                <label for="back-end" class="course_label">バックエンド</label>
+              </div>
+              <div class="course_contents">  
+                <input type="checkbox" name="course" id="app" value="app">
+                <label for="app" class="course_label">アプリ</label>
+              </div>  
+            </div>
+            <div class="note_wrap">  
+              <p class="label">備考</p>
+              <textarea placeholder="何かあればご記入ください" class="zone input_zone note_zone"></textarea>
+            </div>
+            <input type="submit" class="submit_button" value="アカウント作成">  
+              <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
           </form>
         </div>
         <div class="foot-part">

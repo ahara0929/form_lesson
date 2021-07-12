@@ -1,5 +1,196 @@
 @charset "utf-8";
 
+
+.input_zone:focus {
+  background-color: white;
+  outline: none;
+  border-color: #d9d9d9;
+  box-shadow: 0 0 2px #01bfbd;
+}
+
+.name_wrap {
+  display: flex;
+  justify-content: space-around;
+}
+
+.label {
+  margin-top: 20px;
+  font-size: 12px;
+  color: #545658;
+}
+
+.name_label {
+  margin-top: 0;
+}
+
+.alert {
+  color: red;
+}
+
+.name_box {
+  flex-basis: 50%;
+  margin-left: 16px;
+}
+
+.zone {
+  width: 100%;
+  height: 36px;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  color: #545658;
+  border-radius: 3px;
+  box-sizing: border-box;
+  font-size: 13px;
+  margin-top: 5px;
+  padding: 5px;
+}
+
+.name_box:first-child {
+  margin-left: 0;
+}
+
+.gender_box {
+  color: #545658;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.gender_box label {
+  margin-left: 10px;
+}
+
+.gender_box label:first-child {
+  margin-left: 0;
+}
+
+.gender_contents input, .course_contents input {
+  display: none;
+}
+
+.gender_contents {
+  cursor: pointer;
+}
+
+.gender_contents span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+
+.gender_contents span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+}
+
+.gender_zone:checked + span::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: #01bfbd;
+  transform: translateY(-50%);
+}
+
+.area_zone {
+  width: 50%;
+  margin-top: 8px;
+  appearance: none;
+  outline: none;
+}
+
+.area_box {
+  position: relative;
+}
+
+.area_box::after {
+  content: '';
+  position: absolute;
+  right: 268px;
+  top: 50%;
+  width: 5px;
+  height: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+  transform: rotate(45deg);
+}
+
+.course_contents {
+  display: flex;
+  color: #545658;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.course_contents:first-of-type {
+  margin-top: 5px;
+}
+
+.course_label {
+  position: relative;
+  padding-left: 25px;
+}
+
+.course_label::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #d9d9d9;
+  margin-top: -8px;
+}
+
+.course_contents input:checked + .course_label::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  width: 8px;
+  height: 16px;
+  margin-top: -12px;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+  transform: rotate(45deg);
+}
+
+.note_zone {
+  resize: none;
+  height: 100px;
+  line-height: 2;
+}
+
+.submit_button {
+  background-color: #01bfbd;
+  padding: 13px;
+  color: white;
+  border: 1px solid #01bfbd;
+  width: 100%;
+  font-size: 13px;
+  border-radius: 3px;
+  margin-top: 20px;
+}
+
+.submit_button:hover {
+  background-color: #01a6a4;
+  cursor: pointer;
+}
+
+.submit_button:active {
+  background-color: white;
+  color: #01a6a4;
+  border-color: #d9d9d9;
+}
+
 /*--- common style ---*/
 .is-halfWidth {
   width: 50%;
