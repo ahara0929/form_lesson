@@ -79,23 +79,23 @@
                 Eメール
                 <span class="alert">※</span>
               </p>
-              <input type="email" placeholder="ex) hoge@example.com" class="zone input_zone" required>
+              <input type="email" name="email" placeholder="ex) hoge@example.com" class="zone input_zone" required>
             </div>
             <div class="tel_wrap"> 
               <p class="label">電話番号</p>
-              <input type="tel" placeholder="ex) 09012345678" class="zone input_zone">
+              <input type="tel" name="tel" placeholder="ex) 09012345678" class="zone input_zone">
             </div>
             <div class="password_wrap">
               <p class="label">
                 パスワード
                 <span class="alert">※</span>
               </p>
-              <input type="password" class="zone input_zone" required>
+              <input type="password" name="password" class="zone input_zone" required>
               <p class="label">
                 パスワード(確認用)
                 <span class="alert">※</span>
               </p>
-              <input type="password" class="zone input_zone" required>
+              <input type="password" name="password" class="zone input_zone" required>
             </div>
             <div class="course_wrap">
               <p class="label">希望コース</p>
@@ -114,9 +114,9 @@
             </div>
             <div class="note_wrap">  
               <p class="label">備考</p>
-              <textarea placeholder="何かあればご記入ください" class="zone input_zone note_zone"></textarea>
+              <textarea name="note" placeholder="何かあればご記入ください" class="zone input_zone note_zone"></textarea>
             </div>
-            <input type="submit" class="submit_button" value="アカウント作成">  
+            <input type="submit" name="submit_button" class="submit_button" value="アカウント作成">  
               <p class="agreement">アカウントを作成することにより、<a class="link-color" href>利用規約</a>と<a class="link-color" href>プライバシーポリシー</a>に同意するものとします。</p>
           </form>
         </div>
